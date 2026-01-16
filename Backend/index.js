@@ -9,7 +9,7 @@ app.use(cors())
 dotenv.config()
 app.use(express.json())
 
-const PORT = 5000;
+const PORT = process.env.PORT;
 const uri = process.env.URI
 
 mongoose.connect(uri)
